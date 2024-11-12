@@ -2,7 +2,7 @@
 id: planck_low
 name: plancklow
 type: shield
-url: https://github.com/gtips/reviung/tree/master/reviung41
+url: https://github.com/SpenseFML/lowbro
 requires: [nice_nano_v2]
 features:
   - keys
