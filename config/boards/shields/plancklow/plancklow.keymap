@@ -73,9 +73,9 @@
             // |       |  F7  |  F8  |  F9  |  F10 |  F11 |  F12  |   #   |  |   |      |       |       |
             // |       |      |      |      |      |      |       |       |       |      |      |       |
             bindings = <
-                &kp TAB   &kp LC(LA(E))   &kp QMARK  &kp LC(LA(N8))      &kp LC(LA(N9))         &kp GRAVE  &kp EXCL  &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp RPAR   &kp CARET    &kp LS(N3)
-                &kp DEL   &kp LC(LA(MINUS))  &kp AMPS   &kp LC(LA(N7))      &kp LC(LA(N0))         &kp LS(RBRC)  &kp UNDER &kp ASTRK       &kp LS(N9)            &kp FSLH   &kp GT       &kp LC(LA(Q))
-                &trans    &kp NON_US_HASH &kp DOLLAR &kp RA(NON_US_BSLH) &kp LC(LA(RBKT))    &none    &kp RBKT  &kp PRCNT       &kp AT              &kp PIPE   &kp LT       &kp TILDE
+               &kp TAB   &kp LC(LA(E))   &kp QMARK  &kp RA(N8)      &kp RA(N9)         &kp GRAVE  &kp EXCL  &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp RPAR   &kp CARET    &kp LS(N3)
+                &kp DEL   &kp LC(LA(MINUS))  &kp AMPS   &kp RA(N7)      &kp RA(N0)         &kp LS(RBRC)  &kp UNDER &kp ASTRK       &kp LS(N9)            &kp FSLH   &kp GT       &kp LC(LA(Q))
+                &trans    &kp NON_US_HASH &kp DOLLAR &kp RA(NON_US_BSLH) &kp RA(RBKT)    &none    &kp RBKT  &kp PRCNT       &kp AT              &kp PIPE   &kp LT       &kp TILDE
                 &trans    &trans          &trans     &trans              &trans                 &kp SPACE &kp SPACE &trans          &trans              &trans     &trans       &trans
             >;
         };
