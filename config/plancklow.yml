@@ -6,3 +6,4 @@ url: https://github.com/SpenseFML/lowbro
 requires: [nice_nano_v2]
 features:
   - keys
+  - zmk studio
