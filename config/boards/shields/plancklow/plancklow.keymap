@@ -13,29 +13,20 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            // This keymap is for a 65% ANSI layout with 66 keys,
-            // based on the provided physical layout file.
-            // The bottom row includes a split spacebar and layer toggles.
-
-            // ------------------------------------------------------------------------------------------------
-            // | ESC  |  1   |  2   |  3   |  4   |  5   |  6   |  7   |  8   |  9   |  0   |  -   |  =   | BSPC |
-            // | TAB  |  Q   |  W   |  E   |  R   |  T   |  Y   |  U   |  I   |  O   |  P   |  [   |  ]   | \    |
-            // | CAPS |  A   |  S   |  D   |  F   |  G   |  H   |  J   |  K   |  L   |  ;   |  '   | ENTER|
-            // | LSHF |  Z   |  X   |  C   |  V   |  B   |  N   |  M   |  ,   |  .   |  /   | RSHF |  UP  |
-            // | LCTL | LGUI | LALT |      |      |      | SPACE|      |      | RALT | RCTL | LEFT | DOWN | RIGHT|
-            // ------------------------------------------------------------------------------------------------
+            // This is a 65% ANSI keymap for a 5x15 matrix.
+            // The bindings are padded with &none to match the matrix size.
 
             bindings = <
-                // Row 0
-                &kp ESC    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BACKSPACE
-                // Row 1
-                &kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSLH
-                // Row 2
-                &kp CAPS   &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp ENTER &none
-                // Row 3
-                &kp LSHIFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &kp UP
-                // Row 4
-                &kp LCTRL  &kp LGUI  &kp LALT  &mo 1     &mo 2     &kp SPACE &mo 3     &mo 4     &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
+                // Row 0 (15 keys)
+                &kp ESC    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BACKSPACE &none
+                // Row 1 (15 keys)
+                &kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSLH      &none
+                // Row 2 (15 keys)
+                &kp CAPS   &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp ENTER &none         &none
+                // Row 3 (15 keys)
+                &kp LSHIFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &kp UP   &none         &none
+                // Row 4 (15 keys)
+                &kp LCTRL  &kp LGUI  &kp LALT  &mo 1     &mo 2     &kp SPACE &kp SPACE &mo 3     &mo 4     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &none         &none
             >;
         };
     };
